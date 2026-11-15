@@ -1,11 +1,22 @@
 # Songjog Care Platform
 
-Interfaces for [Songjog Care](https://songjogcare.com), the home-care service of Songjog Foundation. Families use it to find and book caregivers, and caregivers use it to find work and grow their careers.
+Interfaces for [Songjog Care](https://songjogcare.com), the home-care service of Songjog Foundation. Families use it to find and book caregivers, and caregivers use it to find work, take training courses and grow their careers.
 
-## Live
+![Songjog Care site for families](screenshots/songjogcare-home.jpg)
 
-- [songjogcare.com](https://songjogcare.com): the site for families and care seekers
-- [caregiver.songjogcare.com](https://caregiver.songjogcare.com): the portal for caregivers
+## Two sides, one service
+
+```mermaid
+flowchart LR
+  fam[Families] --> site[songjogcare.com]
+  site --> book[Book a care service]
+  site --> learn[Training courses]
+  cg[Caregivers] --> portal[caregiver.songjogcare.com]
+  portal --> jobs[Find jobs]
+  portal --> courses[Courses and career growth]
+```
+
+![Caregiver portal](screenshots/caregiver-portal-home.jpg)
 
 ## My role
 
@@ -20,4 +31,4 @@ TypeScript frontend · Figma for UI design
 
 ## Status
 
-Live. The code belongs to Songjog Foundation and is private, so this repository describes my part of the work.
+Live at [songjogcare.com](https://songjogcare.com) and [caregiver.songjogcare.com](https://caregiver.songjogcare.com). The code belongs to Songjog Foundation and is private, so this repository describes my part of the work.
